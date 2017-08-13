@@ -53,6 +53,15 @@ $app->get('/api/categories', 'CategoryController@getCategories');
 
 $app->get('/api/recommendations/', 'RecommendationsController@getRecommendations');
 
+/*
+-------------------------------
+---------- Albums API ---------
+-------------------------------
+*/
+
+$app->get('/api/albums', 'AlbumsController@getAlbums');
+
+$app->get('/api/albums/{supplier_id}', 'AlbumsController@getAlbumsBySupplier');
 
 /*
 -------------------------------

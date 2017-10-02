@@ -17,11 +17,13 @@
 -------------------------
 */
 
-$app->get('/api/suppliers/{category_id}', 'SupplierController@getSuppliers');
+$app->get('/api/suppliers/{category_id}', 'SupplierController@getSuppliersByCategory');
 
 $app->get('/api/suppliers', 'SupplierController@getAllSuppliers');
 
-$app->get('/api/supplier/{supplier_id}', 'SupplierController@getSuppliersByCategory');
+$app->get('/api/supplier/{supplier_id}', 'SupplierController@getSupplierById');
+
+//$app->get('/api/supplier/{supplier_id}', 'SupplierController@getSuppliers');
 
 $app->post('/api/supplier', 'SupplierController@postSupplier');
 

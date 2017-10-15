@@ -11,15 +11,4 @@ class CategoryController extends Controller
         return $this->createSuccessResponse($suppliers, 200);
     }
 
-//    TODO: pass category id and query for all category suppliers
-//    public function getCategorysByCategory(){
-//        $suppliers = Category::all();
-//        return $this->createSuccessResponse($suppliers, 200);
-//    }
-//
-//    public function postCategory(){
-//        $suppliers = Category::all();
-//        return $this->createSuccessResponse($suppliers, 200);
-//    }
-
 }

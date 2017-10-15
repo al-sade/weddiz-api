@@ -16,12 +16,6 @@ class SupplierController extends Controller
         return $this->createSuccessResponse($suppliers, 200);
     }
 
-//    TODO: pass category id and query for all category suppliers
-//    public function getSuppliers(){
-//        $suppliers = Supplier::all();
-//        return $this->createSuccessResponse($suppliers, 200);
-//    }
-
     public function getSupplierById($supplier_id){
         $supplier = Supplier::all()->where('supplier_id','=', $supplier_id);
         return $this->createSuccessResponse($supplier, 200);

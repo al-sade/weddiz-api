@@ -67,6 +67,15 @@ $app->get('/api/albums/{supplier_id}', 'AlbumsController@getAlbumsBySupplier');
 
 /*
 -------------------------------
+---------- Events API ---------
+-------------------------------
+*/
+
+$app->options('/api/event/save', 'EventController@saveEvent');
+$app->post('/api/event/save', 'EventController@saveEvent');
+
+/*
+-------------------------------
 ----- Mailing API -----
 -------------------------------
 */
